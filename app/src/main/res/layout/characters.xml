@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wood1"
+    android:orientation="vertical"
+    tools:context="com.game.harrison.mafia.characters">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingBottom="@dimen/_5sdp"
+        android:paddingTop="@dimen/_20sdp"
+        android:text="CHARACTERS"
+        android:textColor="#FF7C00"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_320sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/wood2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/role_name_big"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_25sdp"
+            android:text="WITCH"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_160sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="#000000"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_1sdp"
+                android:layout_weight="1"
+                android:background="@drawable/wood2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/role_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_32sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:text="ROLE : WITCH"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_13ssp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/par"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_32sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:text="PARTICIPANTS : 0-4"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_13ssp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_32sdp"
+                    android:id="@+id/kp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:text="KILL POWER : NO"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_13ssp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_32sdp"
+                    android:id="@+id/dd"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:text="ON DETECT : DOWN"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_13ssp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_32sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:id="@+id/jd"
+                    android:text="ON JOKER DETECT : DOWN"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_1sdp"
+                android:layout_weight="1"
+                android:background="@drawable/wood2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_20sdp"
+                    android:text="ACTION : REVERSES "
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_60sdp">
+
+                    <ImageView
+                        android:id="@+id/role_action_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/witch"
+                        android:padding="@dimen/_20sdp" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_20sdp"
+                    android:text="ALLIANCE"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/alliance_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_60sdp"
+                    android:background="@drawable/mafia" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:text="POWER"
+                    android:id="@+id/power"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:background="#3E2310"
+                    android:textColor="#ffffff"
+                    android:onClick="tab_change"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:text="NOTES"
+                    android:id="@+id/notes"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:background="#3E2310"
+                    android:textColor="#ffffff"
+                    android:onClick="tab_change"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:onClick="tab_change"
+                    android:text="EXAMPLE"
+                    android:id="@+id/example"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:background="#FF7C00"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="#3E2310"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="EXAMPLE:\n\t\t\t-ASSASSIN Kills MAFIA\n\t\t\t WITCH reverses ASSASSIN\n\t\t\tThe assassin kill will have no effect as it was reversed by witch"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_11ssp"
+                    android:textStyle="bold" />
+            </ScrollView>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dec"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:background="@drawable/back"
+            android:onClick="pageChange" />
+
+        <TextView
+            android:id="@+id/page_no"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:background="#000000"
+            android:paddingTop="@dimen/_8sdp"
+            android:text="1/11"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/inc"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:background="@drawable/next"
+            android:onClick="pageChange" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
